@@ -412,7 +412,7 @@ export function parseFieldSpecs(input) {
 	else if (typeof input === 'function') {
 		tokens = [ input ];
 	}
-	else if ($.isArray(input)) {
+	else if (Array.isArray(input)) {
 		tokens = input;
 	}
 

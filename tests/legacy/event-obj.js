@@ -142,7 +142,7 @@ describe('event object creation', function() {
 			start: '2014-05-01',
 			className: [ 'class1', 'class2' ]
 		});
-		expect($.isArray(event.className)).toEqual(true);
+		expect(Array.isArray(event.className)).toEqual(true);
 		expect(event.className).toEqual([ 'class1', 'class2' ]);
 	});
 
@@ -151,7 +151,7 @@ describe('event object creation', function() {
 			start: '2014-05-01',
 			className: 'class1 class2'
 		});
-		expect($.isArray(event.className)).toEqual(true);
+		expect(Array.isArray(event.className)).toEqual(true);
 		expect(event.className).toEqual([ 'class1', 'class2' ]);
 	});
 

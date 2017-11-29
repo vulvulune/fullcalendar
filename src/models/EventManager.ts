@@ -126,7 +126,7 @@ export default class EventManager {
 		if (!matchInputs) {
 			matchInputs = [];
 		}
-		else if (!$.isArray(matchInputs)) {
+		else if (!Array.isArray(matchInputs)) {
 			matchInputs = [ matchInputs ];
 		}
 

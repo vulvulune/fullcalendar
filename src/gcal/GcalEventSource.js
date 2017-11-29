@@ -52,7 +52,7 @@ var GcalEventSource = EventSource.extend({
 								[ rawEventDefs ].concat(Array.prototype.slice.call(arguments, 1))
 							);
 
-							if ($.isArray(successRes)) {
+							if (Array.isArray(successRes)) {
 								rawEventDefs = successRes;
 							}
 

@@ -47,7 +47,7 @@ export default class JsonFeedEventSource extends EventSource {
 						if (rawEventDefs) {
 							callbackRes = applyAll(onSuccess, this, [ rawEventDefs, status, xhr ]); // redirect `this`
 
-							if ($.isArray(callbackRes)) {
+							if (Array.isArray(callbackRes)) {
 								rawEventDefs = callbackRes;
 							}
 

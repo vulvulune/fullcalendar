@@ -155,7 +155,7 @@ describe('removeEvents', function() {
 
 					// array event sources should maintain the same state
 					// whereas "dynamic" event sources should refetch and reset the state
-					if ($.isArray(events)) {
+					if (Array.isArray(events)) {
 						checkFunc(); // for issue 2187
 					}
 					else {

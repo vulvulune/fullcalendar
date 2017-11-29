@@ -107,7 +107,7 @@ export default class Calendar {
 			context = triggerInfo.context;
 			args = triggerInfo.args;
 		}
-		else if ($.isArray(triggerInfo)) {
+		else if (Array.isArray(triggerInfo)) {
 			args = triggerInfo;
 		}
 

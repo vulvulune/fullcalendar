@@ -56,7 +56,7 @@ export default class BusinessHourGenerator {
 		else if ($.isPlainObject(rawComplexDef)) {
 			rawDefs = [ rawComplexDef ];
 		}
-		else if ($.isArray(rawComplexDef)) {
+		else if (Array.isArray(rawComplexDef)) {
 			rawDefs = rawComplexDef;
 			requireDow = true; // every sub-definition NEEDS a day-of-week
 		}

@@ -174,7 +174,7 @@ export default abstract class EventDef {
 		}
 
 		// TODO: converge with EventSource
-		if ($.isArray(rawProps.className)) {
+		if (Array.isArray(rawProps.className)) {
 			this.className = rawProps.className;
 		}
 		if (typeof rawProps.className === 'string') {

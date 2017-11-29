@@ -1,4 +1,3 @@
-import * as $ from 'jquery'
 import { removeExact } from '../util'
 import EventPeriod from './EventPeriod'
 import ArrayEventSource from './event-source/ArrayEventSource'

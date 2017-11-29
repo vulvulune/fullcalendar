@@ -1,4 +1,3 @@
-import * as $ from 'jquery'
 import {
 	default as ParsableModelMixin,
 	ParsableModelInterface

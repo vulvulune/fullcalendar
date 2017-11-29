@@ -45,7 +45,7 @@ describe('refetchEventSources', function() {
 			expect($('.source3-7').length).toEqual(1);
 
 			var allEventSources = calendarEl.fullCalendar('getEventSources');
-			var blueEventSource = $.grep(allEventSources, function(eventSource) {
+			var blueEventSource = allEventSources.filter(function(eventSource) {
 				return eventSource.color === 'blue';
 			})[0];
 
@@ -105,7 +105,7 @@ describe('refetchEventSources', function() {
 			expect($('.source3-7').length).toEqual(1);
 
 			var allEventSources = calendarEl.fullCalendar('getEventSources');
-			var greenEventSources = $.grep(allEventSources, function(eventSource) {
+			var greenEventSources = allEventSources.filter(function(eventSource) {
 				return eventSource.color === 'green';
 			});
 
@@ -182,7 +182,7 @@ describe('refetchEventSources', function() {
 			calendarEl.fullCalendar(options);
 
 			var allEventSources = calendarEl.fullCalendar('getEventSources');
-			var greenEventSources = $.grep(allEventSources, function(eventSource) { // source 1 and 3
+			var greenEventSources = allEventSources.filter(function(eventSource) { // source 1 and 3
 				return eventSource.color === 'green';
 			});
 
